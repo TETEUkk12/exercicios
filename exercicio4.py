@@ -6,5 +6,5 @@ def calcular_media(lista):
 
     return media
 
-numeros = [7,9,8,7]
-print(calcular_media(numeros))
+# numeros = [7,9,8,7]
+# print(calcular_media(numeros))
