@@ -14,7 +14,6 @@ def obter_dados_aluno():
 
 def cadastrar_aluno(nome, email, serie, nota01=0, nota02=0, nota03=0):
     
-
     notas = [nota01, nota02, nota03]
 
     aluno = {
@@ -55,5 +54,4 @@ def iniciar_sistema():
             break
 
 iniciar_sistema()
-
 
