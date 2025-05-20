@@ -1,4 +1,18 @@
-clientes = []
+import json
+import os
+
+db_clientes = "db_clientes.json"
+# clientes = []
+def carregar_dados():
+    if os.path.exists(db_clientes):
+        with open(db_clientes, "r", encoding="utf-8") as arq_json:
+            return json.load(arq_json)
+    else:
+        return[]
+
+clientes = carregar_dados()
+print(clientes)
+
 def obter_dados_clientes():
     
     nome_cliente = input("Informe o nome do cliente: ")
