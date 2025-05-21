@@ -12,4 +12,7 @@ def carregar_dados():
         
 funcionarios = carregar_dados()
 for funcionario in funcionarios:
-    print(f"Nome do funcionario: {funcionario["nome"]}, Salário do funcionario: {funcionario["salario"]}")
+    if ["salario"] >= 5500:
+        print(f"Nome do funcionario: {funcionario["nome"]}, Salário do funcionario: {funcionario["salario"]}")
+    else:
+        print("O funcionario nao recebe mais que 5500")
