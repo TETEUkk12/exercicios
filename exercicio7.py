@@ -8,7 +8,7 @@ def carregar_dados():
         with open(db_clientes, "r", encoding="utf-8") as arq_json:
             return json.load(arq_json)
     else:
-        return[]
+        return []
 
 clientes = carregar_dados()
 print(clientes)
